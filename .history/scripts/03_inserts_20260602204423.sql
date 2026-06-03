@@ -1,0 +1,17 @@
+INSERT INTO setor (nome_setor, local_setor) VALUES
+    ('Ferramentaria', 'Saguao'),
+    ('TI', 'Prédio leste'),
+    ('Usinagem', 'Estacao noroeste'),
+    ('Tornearia', 'Portaria 20'),
+    ('Bobinagem', 'Prédio 8');
+
+
+
+INSERT INTO funcionario VALUES(id_funcionario, nome_funcionario, cargo_funcionario, cpf_funcionario, salario_funcionario, dataAdmissao_funcionario)
+(default, "Pablo", "Gerente", 12334455657, 1200, 1123.02.02)
+(default, "Romario", "Operador", 23567645678, 3200, 1123.02.02)
+(default, "Estevao", "Zelador", 12334567657, 10000, 1123.02.02)
+(default, "Diego", "Administrador", 12333455657, 7200, 1123.02.02)
+(default, "Rogerio", "Diretor", 11334455657, 11200, 1123.02.02)
+
+INSERT INTO ordem_producao VALUES()

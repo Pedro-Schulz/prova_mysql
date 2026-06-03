@@ -1,0 +1,1 @@
+SELECT nome_setor setor

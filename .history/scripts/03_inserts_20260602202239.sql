@@ -1,0 +1,6 @@
+INSERT INTO setor VALUE 
+    (default, 'Ferramentaria', 'Saguao');    (default, "TI", "Prédio leste"),
+    (default, "Usinagem", "Estção noroeste"),
+    (default, "Tornearia", "Portaria 20"),
+    (default, "Bobinagem", "Prédio 8")
+);
