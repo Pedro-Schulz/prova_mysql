@@ -100,25 +100,4 @@ JOIN setor as S ON S.id_setor = F.id_funcionario;
 SELECT P.nome_produto, P.categoria_produto, F.cnpj_fornecedor
 FROM produto_industrial as P
 JOIN fornecedor as F ON P.id_fornecedor = F.id_fornecedor;
-# JOIN categoria as C ON C.id categoria = P.id_categoria ---> Caso categoria fosse uma tabela
-
-SELECT nome_funcionario, salario_funcionario
-FROM funcionario
-WHERE salario_funcionario > (
-    SELECT AVG(salario_funcionario)
-    FROM funcionario
-);
-
-SELECT nome_produto, precoFabricacao_produto as preco
-FROM produto_industrial
-WHERE preco > (
-    SELECT AVG(precoFabricacao_produto)
-    FROM produto_industrial
-);
-
-SELECT COUNT(F.id_funcionario) as qtd_funcionarios, nome_setor
-FROM setor as S
-JOIN funcionario as F ON F.id_setor = S.id_setor
-GROUP BY (nome_setor);
-
-
+# 

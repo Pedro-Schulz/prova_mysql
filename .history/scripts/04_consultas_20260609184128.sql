@@ -105,20 +105,5 @@ JOIN fornecedor as F ON P.id_fornecedor = F.id_fornecedor;
 SELECT nome_funcionario, salario_funcionario
 FROM funcionario
 WHERE salario_funcionario > (
-    SELECT AVG(salario_funcionario)
-    FROM funcionario
-);
-
-SELECT nome_produto, precoFabricacao_produto as preco
-FROM produto_industrial
-WHERE preco > (
-    SELECT AVG(precoFabricacao_produto)
-    FROM produto_industrial
-);
-
-SELECT COUNT(F.id_funcionario) as qtd_funcionarios, nome_setor
-FROM setor as S
-JOIN funcionario as F ON F.id_setor = S.id_setor
-GROUP BY (nome_setor);
-
-
+    
+)

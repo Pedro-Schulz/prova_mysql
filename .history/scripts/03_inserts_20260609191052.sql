@@ -39,19 +39,19 @@ INSERT INTO ordem_producao (id_op, dataProducao_op, qtdProduzido_op, status_op, 
     (default, '1000-01-01', 123, 'Concluído', '20:12:34', '60:12:34', 4, 4);
 
 INSERT INTO produto_industrial (id_produtoIndustrial, nome_produto, descricao_produto, precoFabricacao_produto, qtdEstoque_produto, categoria_produto, id_fornecedor) VALUES
-    (default, 'bubina', 'cobre', 200.99, 123, 'peca', 1),
+    (default, 'laranja', 'podre', 2.99, 123, 'frutas', 1),
     (default, 'tomate', 'podre', 2.99, 123, 'frutas', 2),
     (default, 'pera', 'podre', 2.99, 123, 'frutas', 3),
     (default, 'laranja', 'podre', 2.99, 123, 'frutas', 4),
-    (default, 'roda', 'laminada', 80.99, 123, 'automobilistica', 5),
+    (default, 'laranja', 'podre', 2.99, 123, 'frutas', 5),
     (default, 'laranja', 'podre', 2.99, 123, 'frutas', 6),
-    (default, 'motor', 'industrial', 1899.99, 123, 'frutas', 7),
+    (default, 'motor', 'industrial', 2.99, 123, 'frutas', 7),
     (default, 'laranja', 'podre', 2.99, 124, 'frutas', 8),
     (default, 'laranja', 'podre', 2.99, 134, 'frutas', 9),
     (default, 'melancia', 'podre', 2.99, 234, 'frutas', 10),
-    (default, 'hélice', 'zinco', 400.99, 234, 'ultraleves', 1),
+    (default, 'laranja', 'podre', 2.99, 234, 'frutas', 1),
     (default, 'laranja', 'podre', 2.99, 234, 'frutas', 2),
-    (default, 'pistao', 'metal', 70.99, 234, 'frutas', 3),
+    (default, 'pistao', 'metal', 2.99, 234, 'frutas', 3),
     (default, 'laranja', 'podre', 2.99, 123, 'frutas', 4),
     (default, 'laranja', 'podre', 2.99, 124, 'frutas', 5),
     (default, 'abacate', 'podre', 2.99, 134, 'frutas', 6);
@@ -64,8 +64,8 @@ INSERT INTO fornecedor (id_fornecedor, cnpj_fornecedor, telefone_fornecedor, cid
     (default, 98743, 1243123451234, 'São Paulo'),
     (default, 46524, 1243123451234, 'Belo Horizonte'),
     (default, 12352, 1243123451234, 'São Paulo'),
-    (default, 44515, 1243123451234, 'Rio de Janeiro'),
-    (default, 76256, 1243123451234, 'São Paulo'),
-    (default, 77171, 1243123451234, 'São Paulo'),
+    (default, 11118, 1243123451234, 'Rio de Janeiro'),
+    (default, 11119, 1243123451234, 'São Paulo'),
+    (default, 21111, 1243123451234, 'São Paulo'),
     (default, 21243, 1243123451234, 'São Paulo');
     select id_fornecedor from fornecedor;

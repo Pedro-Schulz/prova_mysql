@@ -112,13 +112,5 @@ WHERE salario_funcionario > (
 SELECT nome_produto, precoFabricacao_produto as preco
 FROM produto_industrial
 WHERE preco > (
-    SELECT AVG(precoFabricacao_produto)
-    FROM produto_industrial
+    
 );
-
-SELECT COUNT(F.id_funcionario) as qtd_funcionarios, nome_setor
-FROM setor as S
-JOIN funcionario as F ON F.id_setor = S.id_setor
-GROUP BY (nome_setor);
-
-
